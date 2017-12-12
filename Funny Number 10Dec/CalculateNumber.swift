@@ -20,8 +20,18 @@ class MyClass {
     }
     
 //    Set Start
+    func setStart() -> String {
+        return "1"
+    }
     
 //    Increase
+    func inCrease(numberInt: Int) -> String {
+        
+        let resultInt = numberInt + 1
+        let resultString = String(resultInt)
+        
+        return resultString
+    }
     
     
 }   // MyClass

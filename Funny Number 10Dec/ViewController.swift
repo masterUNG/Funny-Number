@@ -28,11 +28,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func startButton(_ sender: Any) {
+        displayNumberLabel.text = myClass.setStart()
     }
     
     
     
     @IBAction func nextButton(_ sender: Any) {
+        
+        let numberInt = Int(displayNumberLabel.text!)
+        displayNumberLabel.text = myClass.inCrease(numberInt: numberInt!)
+        
     }
     
     
