@@ -56,9 +56,12 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07c-Dd-PZp">
-                                <rect key="frame" x="44" y="187" width="287" height="292"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg5.png" translatesAutoresizingMaskIntoConstraints="NO" id="BO6-gK-OXg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07c-Dd-PZp">
+                                <rect key="frame" x="0.0" y="198" width="375" height="270"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="220"/>
                                 <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,6 +70,12 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="07c-Dd-PZp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eth-TF-OZk"/>
+                            <constraint firstItem="07c-Dd-PZp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HcR-sM-ukk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="07c-Dd-PZp" secondAttribute="trailing" id="amH-Af-Pz7"/>
+                            <constraint firstItem="07c-Dd-PZp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cna-Ss-gmm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -75,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-374" y="83"/>
+            <point key="canvasLocation" x="-375.19999999999999" y="82.3088455772114"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="9TC-hM-gFB">
@@ -98,6 +107,26 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fsq-3U-YP0">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" image="ic_keyboard_arrow_left_white_48pt.png" id="EJ2-Jo-BAz"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Q15-Lf-ZOi"/>
+                                    <barButtonItem title="Start" id="8Jv-9z-o87"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="f0L-ZM-j8e"/>
+                                    <barButtonItem title="Item" image="ic_keyboard_arrow_right_white_48pt.png" id="ACb-je-qU3"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfi-ag-jpJ">
+                                <rect key="frame" x="49" y="225" width="277" height="217"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
+                                <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="5" height="7"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ebj-Vh-YsU"/>
@@ -105,10 +134,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZPY-xF-WY9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="34"/>
+            <point key="canvasLocation" x="468" y="51"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bg5.png" width="1000" height="667"/>
         <image name="ic_keyboard_arrow_left_white_48pt.png" width="48" height="48"/>
         <image name="ic_keyboard_arrow_right_white_48pt.png" width="48" height="48"/>
     </resources>
